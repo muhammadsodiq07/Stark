@@ -12,7 +12,9 @@
   display: flex;
   flex-flow: row wrap;
 }
-
+.star {
+  justify-content: flex-start;
+}
 .between {
   justify-content: space-between;
 }
