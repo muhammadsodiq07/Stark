@@ -22,3 +22,33 @@ removbox.addEventListener('click', function() {
   modaluser.classList.remove('user');
 });
 
+
+let elopenShopnmodal = document.querySelector('.shop__img-icon');
+let elColseEemodal = document.getElementById('closeEe-btn');
+let elbagShopModal = document.getElementById('mod-show-bag-shop');
+
+
+elopenShopnmodal.addEventListener('click', function () {
+  elbagShopModal.classList.add('mod-show-bag-shop');
+});
+
+
+elColseEemodal.addEventListener('click', function () {
+  elbagShopModal.classList.remove('mod-show-bag-shop');
+});
+
+
+
+let elopenHeartnmodal = document.getElementById('open-heart_show');
+let elheartColseEemodal = document.getElementById('heart-close-btn');
+let elbagHeartModal = document.getElementById('heart_show');
+
+
+elopenHeartnmodal.addEventListener('click', function () {
+  elbagHeartModal.classList.add('heart_show');
+});
+
+
+elheartColseEemodal.addEventListener('click', function () {
+  elbagHeartModal.classList.remove('heart_show');
+});
