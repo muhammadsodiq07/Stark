@@ -1060,9 +1060,7 @@ body {
 }
 
 
-.container {
-  /* width: 1430px; */
-}
+
 .shoop__item {
   margin-bottom: 50px;
 }
@@ -1122,7 +1120,6 @@ body {
 .shoop__menus {
   padding-top: 20px;
   list-style-type: none;
-  width: 1400px;
 }
 
 .shoop__list {
@@ -1591,4 +1588,8 @@ body {
   background-color: #23282e;
   height: 800px;
   width: 100%;
+}
+
+.input-footer {
+  position: relative;
 }
