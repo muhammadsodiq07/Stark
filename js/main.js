@@ -52,3 +52,20 @@ elopenHeartnmodal.addEventListener('click', function () {
 elheartColseEemodal.addEventListener('click', function () {
   elbagHeartModal.classList.remove('heart_show');
 });
+
+
+
+
+let elopenMessenbtn = document.getElementById('openMessenBtn');
+let elmessenCloseBtn = document.getElementById('messen_closeBtn');
+let elopenMesseng = document.getElementById('open__messeng');
+
+
+elopenMessenbtn.addEventListener('click', function () {
+  elopenMesseng.classList.add('open__messeng');
+});
+
+
+elmessenCloseBtn.addEventListener('click', function () {
+  elopenMesseng.classList.remove('open__messeng');
+});
