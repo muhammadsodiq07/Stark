@@ -1310,7 +1310,7 @@ body {
   font-family: sans-serif;
   top: 10px;
   left: 20px;
-  width: 110px;
+  width: 125px;
   z-index: 110;
   padding-right: 6px;
   margin: 2px 0;
@@ -1366,7 +1366,7 @@ body {
 }
 
 .shop-link-texttt {
-  width: 70px;
+  width: 85px;
   padding: 0 6px;
   margin: 2px 0;
   color: #fff;
@@ -1865,4 +1865,9 @@ body {
   height: 437px;
   z-index: 400;
   transition: all 0.2s ease;
+}
+
+.heart-show-close {
+  background-color: #000;
+  color: #000;
 }
