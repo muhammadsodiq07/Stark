@@ -1060,6 +1060,7 @@ body {
 
 
 
+
 .shoop__item {
   margin-bottom: 50px;
 }
@@ -1088,12 +1089,17 @@ body {
 }
 
 .shop-tit-activ {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 7px 0;
+  margin: 0 25px;
+  text-decoration: none;
+  position: relative;
+  border-bottom: 3px solid transparent;
+  color: rgba(34, 34, 34, 0.644);
   color: #222;
   border-bottom: 3px solid #d88f0f;
-}
-
-.shop-tit-activ:hover {
-  border: none;
 }
 
 .shoop__title::after {
@@ -1112,7 +1118,7 @@ body {
   transition: all 0.3s ease;
 }
 
-.shoop__title:hover:focus {
+.shoop__title:hover {
   color: #222;
 }
 
@@ -1124,7 +1130,10 @@ body {
 .shoop__list {
   position: relative;
   width: 320px;
+  /* width: 20%; */
   height: 495px;
+  margin: 5px 0;
+  cursor: pointer;
 }
 
 .shoop__link {
@@ -1138,14 +1147,16 @@ body {
   left: 0;
   background-image: url('https://rubiktheme.com/demo/rb_stark_demo/25-home_default/hummingbird-printed-t-shirt.jpg');
   width: 320px;
+  /* width: 100%; */
   height: 380px;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 100;
   transition: all 0.5s ease;
+  text-decoration: none;
 }
 
-.shoop__img-box:hover {
+.shoop__list:hover .shoop__img-box {
   position: relative;
   top: 0;
   left: 0;
@@ -1162,7 +1173,7 @@ body {
   background-image: url('https://rubiktheme.com/demo/rb_stark_demo/27-home_default/brown-bear-printed-sweater.jpg');
 }
 
-.shop-img-2:hover {
+.shoop__list:hover .shop-img-2 {
   background-image: url('https://rubiktheme.com/demo/rb_stark_demo/28-home_default/brown-bear-printed-sweater.jpg');
 }
 
@@ -1170,7 +1181,7 @@ body {
   background-image: url('https://rubiktheme.com/demo/rb_stark_demo/30-home_default/the-best-is-yet-to-come-framed-poster.jpg');
 }
 
-.shop-img-3:hover {
+.shoop__list:hover .shop-img-3 {
   background-image: url('https://rubiktheme.com/demo/rb_stark_demo/31-home_default/the-best-is-yet-to-come-framed-poster.jpg');
 }
 
@@ -1178,7 +1189,7 @@ body {
   background-image: url('https://rubiktheme.com/demo/rb_stark_demo/33-home_default/the-adventure-begins-framed-poster.jpg');
 }
 
-.shop-img-4:hover {
+.shoop__list:hover .shop-img-4 {
   background-image: url('https://rubiktheme.com/demo/rb_stark_demo/34-home_default/the-adventure-begins-framed-poster.jpg');
 }
 
@@ -1186,7 +1197,7 @@ body {
   background-image: url('https://rubiktheme.com/demo/rb_stark_demo/36-home_default/today-is-a-good-day-framed-poster.jpg');
 }
 
-.shop-img-5:hover {
+.shoop__list:hover .shop-img-5 {
   background-image: url('https://rubiktheme.com/demo/rb_stark_demo/37-home_default/today-is-a-good-day-framed-poster.jpg');
 }
 
@@ -1194,7 +1205,7 @@ body {
   background-image: url('https://rubiktheme.com/demo/rb_stark_demo/41-home_default/mug-the-best-is-yet-to-come.jpg');
 }
 
-.shop-img-6:hover {
+.shoop__list:hover .shop-img-6 {
   background-image: url('https://rubiktheme.com/demo/rb_stark_demo/42-home_default/mug-the-best-is-yet-to-come.jpg');
 }
 
@@ -1202,7 +1213,7 @@ body {
   background-image: url('https://rubiktheme.com/demo/rb_stark_demo/43-home_default/mug-the-adventure-begins.jpg');
 }
 
-.shop-img-7:hover {
+.shoop__list:hover .shop-img-7 {
   background-image: url('https://rubiktheme.com/demo/rb_stark_demo/44-home_default/mug-the-adventure-begins.jpg');
 }
 
@@ -1210,7 +1221,7 @@ body {
   background-image: url('https://rubiktheme.com/demo/rb_stark_demo/46-home_default/mug-today-is-a-good-day.jpg');
 }
 
-.shop-img-8:hover {
+.shoop__list:hover .shop-img-8 {
   background-image: url('https://rubiktheme.com/demo/rb_stark_demo/45-home_default/mug-today-is-a-good-day.jpg');
 }
 
@@ -1218,7 +1229,7 @@ body {
   background-image: url('	https://rubiktheme.com/demo/rb_stark_demo/53-home_default/mountain-fox-cushion.jpg');
 }
 
-.shop-img-9:hover {
+.shoop__list:hover .shop-img-9 {
   background-image: url('https://rubiktheme.com/demo/rb_stark_demo/54-home_default/mountain-fox-cushion.jpg');
 }
 
@@ -1226,15 +1237,22 @@ body {
   background-image: url('https://rubiktheme.com/demo/rb_stark_demo/57-home_default/brown-bear-cushion.jpg');
 }
 
-.shop-img-10:hover {
+.shoop__list:hover .shop-img-10 {
   background-image: url('https://rubiktheme.com/demo/rb_stark_demo/56-home_default/brown-bear-cushion.jpg');
+}
+
+.shoop__icons__img-box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 380px;
 }
 
 .shop__img-icon {
   position: absolute;
-  bottom: 20px;
-  left: 63px;
   bottom: 38px;
+  left: 63px;
   width: 60px;
   height: 50px;
   background: #000;
@@ -1245,6 +1263,7 @@ body {
   border-radius: 3px;
   transition: all 0.5s ease;
   border: none;
+  z-index: 100;
 }
 
 .sh-i-ic-2 {
@@ -1261,6 +1280,7 @@ body {
 
 .shop__img-icon:hover {
   background: #d88f0f;
+  cursor: pointer;
 }
 
 .shoop__list:hover .shop__img-icon {
@@ -1269,16 +1289,20 @@ body {
   bottom: 20px;
 }
 
-.shoop__img-box:hover .sh-i-ic-2 {
+.shoop__list:hover .sh-i-ic-2 {
   opacity: 1;
-  transition: all 0.6s ease;
+  transition: all 0.7s ease;
   bottom: 20px;
 }
 
-.shoop__img-box:hover .sh-i-ic-3 {
+.shoop__list:hover .sh-i-ic-3 {
   opacity: 1;
   transition: all 0.9s ease;
   bottom: 20px;
+}
+
+.shoop__link-text{
+  text-decoration: none;
 }
 
 .shoop__link-tit {
@@ -1286,7 +1310,7 @@ body {
   font-family: sans-serif;
   top: 10px;
   left: 20px;
-  width: 140px;
+  width: 110px;
   z-index: 110;
   padding-right: 6px;
   margin: 2px 0;
@@ -1304,8 +1328,8 @@ body {
 .shoop__link-span {
   background: red;
   margin-right: 6px;
-  padding: 1px 0;
-  padding-bottom: 2px;
+  padding: 4px 5px;
+  padding-bottom: 4.5px;
   padding-left: 7px;
 }
 
@@ -1329,15 +1353,20 @@ body {
 .shoop__links-star-icon {
   position: absolute;
   right: 0;
+  top: 25px;
   color: #f0cc00;
 }
-
-.shop-star-icon {
+.yellow {
+  color: #f0cc00;
+  font-size: 10px;
+}
+.grey {
+  font-size: 10px;
   color: #D8D8D8;
 }
 
 .shop-link-texttt {
-  width: 98px;
+  width: 70px;
   padding: 0 6px;
   margin: 2px 0;
   color: #fff;
@@ -1528,7 +1557,7 @@ body {
 
 .logos__menu {
   list-style-type: none;
-  width: 5000px;
+  width: 3000px;
   height: 120px;
   overflow: hidden;
 }
@@ -1541,47 +1570,21 @@ body {
 }
 
 @keyframes logos__list {
-  /* 16.666%{
-    transform: translate3d(-300px, 0px, 0);
-    animation-delay: 3s;
-  } */
-
-  25%{
+  25% {
     transform: translate3d(-600px, 0px, 0);
     animation-delay: 3s;
   }
-
-  /* 33.33%{
-    transform: translate3d(-900px, 0px, 0);
-    animation-delay: 3s;
-  } */
 
   50% {
     transform: translate3d(-1500px, 0px, 0);
     animation-delay: 3s;
   }
 
-  /* 66.666%{
-    transform: translate3d(-1500px, 0px, 0);
-    animation-delay: 3s;
-  } */
-
-  75%{
-    transform: translate3d(-2100px, 0, 0);
-    animation-delay: 3s;
-  }
-
-  /* 91.6666%{
-    transform: translate3d(-2100px, 0px, 0);
-    animation-delay: 3s;
-  } */
-
   100% {
-    transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(0px, 0, 0);
   }
 
 }
-
 
 .footer-inner {
   background: #23282E;
@@ -1628,6 +1631,9 @@ body {
   background: rgb(224, 224, 224);
 }
 
+.icons-color {
+  color: #000;
+}
 .form-input {
   border: 1px solid #FFF;
   color: #999;
