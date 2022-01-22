@@ -310,8 +310,8 @@ body {
   border-radius: 4px;
   margin-bottom: 20px;
   border: none;
-  border-bottom: 1px solid #dadce5;
-  width: 1340px;
+  border-bottom: 1px solid #000;
+  width: 1320px;
 }
 
 .modal-input:focus {
@@ -350,6 +350,13 @@ body {
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 1rem;
+}
+.modal-search-div  {
+  position: absolute;
+  right: 50px;
+  top: 220px;
+  font-size: 34px;
+  color: #000;
 }
 
 .modal-link {
@@ -1305,8 +1312,13 @@ body {
   text-decoration: none;
 }
 .shop-link-texttt {
-  width: 85px;
-  padding: 0 6px;
+  position: absolute;
+  font-family: sans-serif;
+  top: 10px;
+  left: 20px;
+  width: 90px;
+  z-index: 110;
+  padding-left: 6px;
   margin: 2px 0;
   color: #fff;
   background: #2fb5d2;
@@ -1319,7 +1331,7 @@ body {
   font-family: sans-serif;
   top: 10px;
   left: 20px;
-  width: 125px;
+  width: 145px;
   z-index: 110;
   padding-right: 6px;
   margin: 2px 0;
