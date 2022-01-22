@@ -311,7 +311,7 @@ body {
   margin-bottom: 20px;
   border: none;
   border-bottom: 1px solid #000;
-  width: 1320px;
+  width: 1320.px;
 }
 
 .modal-input:focus {
@@ -1316,9 +1316,9 @@ body {
   font-family: sans-serif;
   top: 10px;
   left: 20px;
-  width: 90px;
+  width: 100px;
   z-index: 110;
-  padding-left: 6px;
+  padding-left: 10px;
   margin: 2px 0;
   color: #fff;
   background: #2fb5d2;
@@ -1348,10 +1348,12 @@ body {
 
 .shoop__link-span {
   background: red;
-  margin-right: 6px;
-  padding: 4px 5px;
-  padding-bottom: 4.5px;
-  padding-left: 7px;
+  padding: 4.5px;
+  margin-right: 10px;
+    /* margin-right: 6px;
+    padding: px 5px;
+    padding-bottom: 4.5px;
+    padding-left: 7px; */
 }
 
 .shop-text-star {
